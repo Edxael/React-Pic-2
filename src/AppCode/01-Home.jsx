@@ -1,5 +1,9 @@
 import React from 'react'
 import axios from 'axios'
+// var base64Img = require('base64-img')
+import base64Img from 'base64-img'
+
+
  
 export default class extends React.Component {
     state = { picture: [] }
@@ -15,9 +19,24 @@ export default class extends React.Component {
         const fileUpload = async () => {
             console.log("Uploading")
 
-            const DBResp = await axios.post('http://localhost:8080/api/pics', { pic: this.state.picture[0] } )
-                .then( (response) => { return response })
-                .catch( (error) => { console.log(error) })
+            // console.log("onState: ", this.state.picture)
+
+
+            base64Img.base64('./img/dcb1.jpg', (err, data) => {
+                console.log("Hello from inside....")
+            })
+
+
+
+
+            // var data64 = base64Img.base64Sync('./img/dcb1.jpg')
+            // console.log("The 64IMG: ", data64)
+
+            // const DBResp = await axios.post('http://localhost:8080/api/pics', { pic: "Momentos" } )
+            //     .then( (response) => { return response })
+            //     .catch( (error) => { console.log(error) })
+
+            // console.log(DBResp)
             await this.setState({ picture: [] })
         }
 
@@ -25,7 +44,7 @@ export default class extends React.Component {
 
         return (
             <div>
-                <h1>Upload IMG</h1>
+                <h1>Upload IMG.</h1>
             
                 <input type="file" onChange={fileSelecter} />
 
@@ -37,6 +56,7 @@ export default class extends React.Component {
         );
     }
 }
+
 
 
 

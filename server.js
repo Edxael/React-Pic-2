@@ -38,10 +38,10 @@ router.route('/pics')
 })
 
 .post((req, res) => {  // Add One to the Database
-    console.log( 'Data from FE:', req.body.pic )
+    console.log( 'Data from FE:', req.body )
 
 
-    converto
+    
 
     // db.insert({ name: req.body.name, country: req.body.country, email: req.body.email }).into('Profiles').then((data) => {
     //     res.send(data)
