@@ -24,4 +24,9 @@ https://www.npmjs.com/package/react-images-upload
 ---[ Videos ]---------------------------
 https://www.youtube.com/watch?v=XeiOnkEI7XI
 
+prequel: https://www.youtube.com/watch?v=qZ1EFnFOGvE
+
+
+
 https://www.youtube.com/watch?v=WOTFmPkWbxo
+

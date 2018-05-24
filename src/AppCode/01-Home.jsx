@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
  
 export default class extends React.Component {
     state = { picture: [] }
@@ -11,8 +12,13 @@ export default class extends React.Component {
             this.setState({ picture: event.target.files[0] })
         }
 
-        const fileUpload = () => {
+        const fileUpload = async () => {
             console.log("Uploading")
+
+            const DBResp = await axios.post('http://localhost:8080/api/pics', { pic: this.state.picture[0] } )
+                .then( (response) => { return response })
+                .catch( (error) => { console.log(error) })
+            await this.setState({ picture: [] })
         }
 
         console.log("The Pic: ", this.state.picture)
