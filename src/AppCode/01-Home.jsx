@@ -5,7 +5,7 @@ import request from 'superagent'
 
 
 const CLOUDINARY_UPLOAD_PRESET = 'edxael1';
-const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/your_cloudinary_app_name/upload';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/arhtdtoj/upload';
 
 
 export default class extends React.Component {
