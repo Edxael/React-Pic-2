@@ -15,6 +15,9 @@ export default class extends React.Component{
                     clearTimeout(myVar)
                 } } />
 
+                <br/>
+                <p>Type to execute the SetTimeOut.</p>
+
             </div>
         )
     }
