@@ -154,7 +154,7 @@ export default class extends React.Component {
 =============================================
 
 
-// ====[ this converst image to Base64 ]=========================================================
+// ====[ this converst image to Base64 ]==================================
 
 import React from 'react'
 // import axios from 'axios'
