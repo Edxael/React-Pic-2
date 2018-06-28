@@ -28,6 +28,7 @@ export default class extends React.Component{
                     <br/>
                     <hr/>
                     <div>By: Edmundo</div>
+                    <hr/>
 
                     <br/>
             
